@@ -2,14 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/list_fragment"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+
+    >
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle_view_numbers"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/lin_result" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_above="@+id/lin_result"
+        android:layout_marginBottom="-17dp" />
 
     <LinearLayout
         android:id="@+id/lin_result"

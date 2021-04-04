@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NumbersApp</string>
+    <string name="button_text">Add number</string>
+</resources>

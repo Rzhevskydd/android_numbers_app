@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.numbersapp.ui.main.NumberFragment;
 import com.example.numbersapp.ui.main.NumberItem;
 import com.example.numbersapp.ui.main.NumberItemsAdapter;
 import com.example.numbersapp.ui.main.NumbersTableFragment;
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements NumberItemsAdapte
     public void onNumberClicked(NumberItem item) {
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.fragment_container, NumbersTableFragment.newInstance())
+                .replace(R.id.fragment_container, NumberFragment.newInstance(item))
                 .addToBackStack(null)
                 .commit();
         isNumbersAppActivated = true;

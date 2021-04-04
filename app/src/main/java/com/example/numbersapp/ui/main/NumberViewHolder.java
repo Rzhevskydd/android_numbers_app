@@ -26,15 +26,7 @@ class NumberViewHolder extends RecyclerView.ViewHolder {
             if (listener != null) {
                 listener.onNumberClicked(numItem);
             }
-//                AppCompatActivity activity = (AppCompatActivity) view.getContext();
-//                if (activity.getSupportFragmentManager().findFragmentById(R.id.table_container) == null) {
-//                    activity.getSupportFragmentManager()
-//                            .beginTransaction()
-//                            .replace(R.id.container, LargeNumFragment.newInstance(mText, mColor))
-//                            .addToBackStack(null)
-//                            .commit();
-//                }
-            }
+        }
         );
     }
 

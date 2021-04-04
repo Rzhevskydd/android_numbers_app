@@ -30,7 +30,6 @@ public class NumbersTableFragment extends Fragment implements View.OnClickListen
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
-//        mViewModel = new NumbersViewModel();
         mViewModel.red = getResources().getColor(R.color.red);
         mViewModel.blue = getResources().getColor(R.color.blue);
 
